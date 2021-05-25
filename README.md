@@ -1,1 +1,1 @@
-# js-interview
+# ts-interview

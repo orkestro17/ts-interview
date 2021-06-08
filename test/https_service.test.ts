@@ -3,18 +3,20 @@ import nock from "nock"
 import { HttpService } from "../src/http_service"
 import { QuotesReturnPayload } from "../src/types"
 
-const exampleReturnPayloadFromFleet: QuotesReturnPayload =  [
-  {
-    quoteId: "123",
-    service: "car",
-    price: 10.34
-  },
-  {
-    quoteId: "456",
-    service: "bike",
-    price: 6.32
-  }
-]
+const exampleReturnPayloadFromFleet: QuotesReturnPayload =  {
+  quotes: [
+    {
+      quoteId: "123",
+      service: "car",
+      price: 10.34
+    },
+    {
+      quoteId: "456",
+      service: "bike",
+      price: 6.32
+    }
+  ]
+}
 
 describe("Http External Fleet Service", () => {
   

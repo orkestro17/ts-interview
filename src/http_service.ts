@@ -1,5 +1,5 @@
 import got, { Headers } from "got"
-import { QuoteRequestPayload, QuotesReturnPayload } from "./types"
+import { Credentials, QuoteRequestPayload, QuotesReturnPayload } from "./types"
 
 
 /*
@@ -27,7 +27,7 @@ Extension
 export class HttpService {
   constructor() {}
 
-  async requestQuotes(service: string, payload: QuoteRequestPayload) {
+  async requestQuote(service: string, payload: QuoteRequestPayload) {
     // Write Code here    
   }
 
